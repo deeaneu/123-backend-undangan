@@ -29,7 +29,7 @@ class CommentController extends Controller
     {
         $valid = $this->validate($request, [
             'next' => ['nullable', 'int'],
-            'per' => ['required', 'int', 'max:50']
+            'per' => ['required', 'int', 'max:10']
         ]);
 
         if ($valid->fails()) {
